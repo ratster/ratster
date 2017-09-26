@@ -7,7 +7,7 @@
         s=u.createElement('script');
         s.type='text/javascript';
         s.async=true;
-        s.src='https://cdn.pushcrewstaging.com/js/efb0de1a5663cc9cae3ba100c87096af.js';
+        s.src='https://cdn.pushcrew.com/js/853ac01e1b244d1eab9cd7c0269748c0.js';
         h=u.getElementsByTagName('script')[0];
         h.parentNode.insertBefore(s,h);
     })(window,document);
@@ -22,12 +22,12 @@ _pcq.push(['subscriptionSuccessCallback',callbackOnSuccessfulSubscription]); //r
 
 function callbackOnAPIReady() {
     //now api is ready
-    _pcq.push(['addSubscriberToSegment', 'JustSubscribed', callbackForAddToSegment]);
+    _pcq.push(['addSubscriberToSegment', 'JustSubscribed_prod', callbackForAddToSegment]);
 }
 
 function callbackOnSuccessfulSubscription(subscriberId, values) {
     //user just got subscribed
-    _pcq.push(['addSubscriberToSegment', 'JustSubscribed', callbackForAddToSegment]);
+    _pcq.push(['addSubscriberToSegment', 'JustSubscribed_prod', callbackForAddToSegment]);
 }
 
 function callbackForAddToSegment(response) {
@@ -50,7 +50,7 @@ function callbackForAddToSegment(response) {
 
 <body>
 
- page_JustSubscribed
+ page_JustSubscribed_prod
     
 </body>
     
